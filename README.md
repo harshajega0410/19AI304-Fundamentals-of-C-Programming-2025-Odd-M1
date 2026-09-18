@@ -26,7 +26,30 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char a, b, c;
+
+    printf("Enter first character: ");
+    scanf(" %c", &a);
+
+    printf("Enter second character: ");
+    scanf(" %c", &b);
+
+    printf("Enter third character: ");
+    scanf(" %c", &c);
+
+    printf("Characters in reverse order: %c %c %c\n", c, b, a);
+
+    return 0;
+}
+```
+
 # Output:
+<img width="1276" height="593" alt="Screenshot 2026-09-18 202905" src="https://github.com/user-attachments/assets/bb1affd8-4db7-4032-a37d-37b4ada6879d" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +80,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int A;
+
+    printf("Enter a number: ");
+    scanf("%d", &A);
+
+    if (A > 0)
+        printf("%d is a positive number.\n", A);
+    else
+        printf("%d is not a positive number.\n", A);
+
+    return 0;
+}
+```
+
 # Output:
+<img width="1007" height="570" alt="image" src="https://github.com/user-attachments/assets/f7c76c7d-2db4-4b6b-be84-8d5a9cdafe6c" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +124,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    float a, b, min;
+
+    printf("Enter first number: ");
+    scanf("%f", &a);
+
+    printf("Enter second number: ");
+    scanf("%f", &b);
+
+    min = (a < b) ? a : b;
+
+    printf("Minimum number is: %.2f\n", min);
+
+    return 0;
+}
+```
 # Output:
+<img width="1046" height="505" alt="image" src="https://github.com/user-attachments/assets/682ac3bf-8800-49d3-a738-02207d42adb3" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +184,24 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num == 1)
+        printf("The number is equal to 1.\n");
+
+    return 0;
+}
+```
 # Output:
+<img width="1006" height="557" alt="image" src="https://github.com/user-attachments/assets/752d81da-6c31-4b75-a735-f27d532145e3" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +246,43 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    float m1, m2, m3, total, percentage;
+
+    printf("Enter marks of three subjects: ");
+    scanf("%f %f %f", &m1, &m2, &m3);
+
+
+    total = m1 + m2 + m3;
+    percentage = (total / 300) * 100; // assuming each subject is out of 100
+
+    printf("\nTotal Marks = %.2f", total);
+    printf("\nPercentage = %.2f%%", percentage);
+
+
+    if (m1 < 35 || m2 < 35 || m3 < 35) {
+        printf("\nResult: Fail (Less than 35 marks in one or more subjects)\n");
+    }
+    else {
+        if (percentage >= 60)
+            printf("\nResult: First Division\n");
+        else if (percentage >= 45)
+            printf("\nResult: Second Division\n");
+        else if (percentage >= 35)
+            printf("\nResult: Pass Division\n");
+        else
+            printf("\nResult: Fail\n");
+    }
+
+    return 0;
+}
+```
 # Output:
+<img width="940" height="602" alt="image" src="https://github.com/user-attachments/assets/7eea3940-b754-465b-a308-2c1a0f45d380" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
